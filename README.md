@@ -17,3 +17,12 @@ A probability-of-default model built on 1.35 million real loan outcomes, with ti
 
 **[quant-risk-models](https://github.com/armotezakker/quant-risk-models)**
 Markowitz portfolio optimization, Black-Scholes option pricing, Value at Risk, and Merton-Vasicek structural credit risk, built on real market data and backtested against real outcomes.
+
+**[ai-power-event-study](https://github.com/armotezakker/ai-power-event-study)**
+A market model event study testing whether real, dated news about AI data center power demand caused significant stock reactions, with a safeguard that caught a real data contamination case on the first live run. Two individually significant results did not survive a Bonferroni correction for multiple testing, the honest, complete answer once accounted for.
+
+**[airline-price-elasticity](https://github.com/armotezakker/airline-price-elasticity)**
+Route-level price elasticity of demand on 30 years of real US airline fare data. Found and fixed a 30-year trend confound, then a new overfitting problem introduced by that fix, both proven with tests that fail on the old code and pass on the new. Final elasticities land in a literature-consistent range, concentrated in leisure travel markets as economic theory predicts.
+
+**[bigquery-loan-analytics](https://github.com/armotezakker/bigquery-loan-analytics)**
+Real BigQuery data warehouse analysis on 1.35 million loan records, cutting query cost by 83 percent through column selection, with a discovery about the query optimizer's behavior along the way and an honest, correctly interpreted comparison against DuckDB.
