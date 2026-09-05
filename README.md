@@ -18,6 +18,9 @@ A probability-of-default model built on 1.35 million real loan outcomes, with ti
 **[quant-risk-models](https://github.com/armotezakker/quant-risk-models)**
 Markowitz portfolio optimization, Black-Scholes option pricing, Value at Risk, and Merton-Vasicek structural credit risk, built on real market data and backtested against real outcomes.
 
+**[esg-credit-risk-model](https://github.com/armotezakker/esg-credit-risk-model)**
+Merton structural credit model on 352 S&P 500 firms testing whether ESG risk predicts default risk after controlling for leverage, size, and sector, finding a clean null validated through influence diagnostics and sub-score decomposition. A climate transition stress overlay showed the shock amplifies risk only in firms that were already highly leveraged, leaving strong balance sheets unaffected even under a severe shock.
+
 **[ai-power-event-study](https://github.com/armotezakker/ai-power-event-study)**
 A market model event study testing whether real, dated news about AI data center power demand caused significant stock reactions, with a safeguard that caught a real data contamination case on the first live run. Two individually significant results did not survive a Bonferroni correction for multiple testing, the honest, complete answer once accounted for.
 
