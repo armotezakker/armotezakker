@@ -21,6 +21,9 @@ Markowitz portfolio optimization, Black-Scholes option pricing, Value at Risk, a
 **[esg-credit-risk-model](https://github.com/armotezakker/esg-credit-risk-model)**
 Merton structural credit model on 352 S&P 500 firms testing whether ESG risk predicts default risk after controlling for leverage, size, and sector, finding a clean null validated through influence diagnostics and sub-score decomposition. A climate transition stress overlay showed the shock amplifies risk only in firms that were already highly leveraged, leaving strong balance sheets unaffected even under a severe shock.
 
+**[seasonal-anomaly-detection](https://github.com/armotezakker/seasonal-anomaly-detection)**
+Seasonal and trend-aware anomaly detection tested on six real series from the Numenta Anomaly Benchmark, with two candidate fixes tested as separate ablations rather than bundled. One fix took a broken detector from catching 1 of 5 real anomalies to 5 of 5. The other backfired for a measured reason. On 4 of 6 series, the original naive detector was still the best result, reported honestly rather than hidden.
+
 **[ai-power-event-study](https://github.com/armotezakker/ai-power-event-study)**
 A market model event study testing whether real, dated news about AI data center power demand caused significant stock reactions, with a safeguard that caught a real data contamination case on the first live run. Two individually significant results did not survive a Bonferroni correction for multiple testing, the honest, complete answer once accounted for.
 
