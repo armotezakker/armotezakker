@@ -27,6 +27,9 @@ An independent credit risk model on ~30 million LendingClub applications, turned
 **[seasonal-anomaly-detection](https://github.com/armotezakker/seasonal-anomaly-detection)**
 Seasonal and trend-aware anomaly detection tested on six real series from the Numenta Anomaly Benchmark, with two candidate fixes tested as separate ablations rather than bundled. One fix took a broken detector from catching 1 of 5 real anomalies to 5 of 5. The other backfired for a measured reason. On 4 of 6 series, the original naive detector was still the best result, reported honestly rather than hidden.
 
+**[mobile-game-analytics](https://github.com/armotezakker/mobile-game-analytics)**
+A SQL and statistics case study on mobile game session data: revenue and engagement analysis, a feature-launch investigation, and an A/B test evaluation. In the feature-launch piece I caught that the assumed before-and-after framing did not match the data before drawing a conclusion from it, and the A/B test evaluation uses proper confidence intervals and significance testing rather than point estimates.
+
 **[ai-power-event-study](https://github.com/armotezakker/ai-power-event-study)**
 A market model event study testing whether real, dated news about AI data center power demand caused significant stock reactions, with a safeguard that caught a real data contamination case on the first live run. Two individually significant results did not survive a Bonferroni correction for multiple testing, the honest, complete answer once accounted for.
 
