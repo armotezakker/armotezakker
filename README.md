@@ -21,6 +21,9 @@ Markowitz portfolio optimization, Black-Scholes option pricing, Value at Risk, a
 **[esg-credit-risk-model](https://github.com/armotezakker/esg-credit-risk-model)**
 Merton structural credit model on 352 S&P 500 firms testing whether ESG risk predicts default risk after controlling for leverage, size, and sector, finding a clean null validated through influence diagnostics and sub-score decomposition. A climate transition stress overlay showed the shock amplifies risk only in firms that were already highly leveraged, leaving strong balance sheets unaffected even under a severe shock.
 
+**[consumer-lending-underwriting-policy](https://github.com/armotezakker/consumer-lending-underwriting-policy)**
+An independent credit risk model on ~30 million LendingClub applications, turned into a threshold-based approval policy and tested on later loan vintages. Without seeing LendingClub's own grade, it recovers their exact risk ordering (Spearman 1.0). The final phase confronts the reject-inference limitation head-on: with no outcomes for declined applicants, this is a re-ordering-within-an-accepted-book result, not a lending-expansion claim, and I deliberately did not force a reject-inference technique the data could not support.
+
 **[seasonal-anomaly-detection](https://github.com/armotezakker/seasonal-anomaly-detection)**
 Seasonal and trend-aware anomaly detection tested on six real series from the Numenta Anomaly Benchmark, with two candidate fixes tested as separate ablations rather than bundled. One fix took a broken detector from catching 1 of 5 real anomalies to 5 of 5. The other backfired for a measured reason. On 4 of 6 series, the original naive detector was still the best result, reported honestly rather than hidden.
 
