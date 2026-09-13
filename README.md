@@ -6,6 +6,9 @@ Data scientist and quantitative researcher based in Stockholm. PhD in Engineerin
 
 ## Projects
 
+**[lending-strategy-business-case](https://github.com/armotezakker/lending-strategy-business-case)**
+A strategy consulting-style business case on a $9.7B consumer loan book, built on a calibrated ML risk model. It finds the counterintuitive result that a single well-placed risk cutoff captures most of the available value (the risk score already prices in most of the segment story), and that the recommendation flips only if realized losses run 15 percent below the book's own average. Delivered as a 12-slide executive deck with a conditional recommendation, not just a model.
+
 **[systematic-strategy-research](https://github.com/armotezakker/systematic-strategy-research)**
 Momentum and short-term reversal signals, backtested with proven look-ahead controls and realistic transaction costs, then tested for statistical significance with a block bootstrap after finding and fixing a real confound in an earlier version of the test. Honest result: neither signal shows a significant edge net of costs in this universe, which is itself the correct, credible finding.
 
