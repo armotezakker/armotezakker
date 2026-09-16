@@ -9,6 +9,9 @@ Data scientist and quantitative researcher based in Stockholm. PhD in Engineerin
 **[lending-strategy-business-case](https://github.com/armotezakker/lending-strategy-business-case)**
 A strategy consulting-style business case on a $9.7B consumer loan book, built on a calibrated ML risk model. It finds the counterintuitive result that a single well-placed risk cutoff captures most of the available value (the risk score already prices in most of the segment story), and that the recommendation flips only if realized losses run 15 percent below the book's own average. Delivered as a 12-slide executive deck with a conditional recommendation, not just a model.
 
+**[financial-text-signal](https://github.com/armotezakker/financial-text-signal)**
+Fine-tuned a transformer on 12,000+ SEC 8-K filings to test whether the language in a corporate filing predicts a stock's next move, benchmarked against a simple word-count baseline. The wording does not predict direction (the fine-tuned model ties a naive guess), but it does predict volatility, beating the baseline substantially and concentrated exactly where word-counting has no signal to find. A follow-up check found the apparent trading edge was mostly an earnings-day artifact; a smaller but real edge survived after controlling for it.
+
 **[systematic-strategy-research](https://github.com/armotezakker/systematic-strategy-research)**
 Momentum and short-term reversal signals, backtested with proven look-ahead controls and realistic transaction costs, then tested for statistical significance with a block bootstrap after finding and fixing a real confound in an earlier version of the test. Honest result: neither signal shows a significant edge net of costs in this universe, which is itself the correct, credible finding.
 
