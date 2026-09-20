@@ -12,6 +12,9 @@ A strategy consulting-style business case on a $9.7B consumer loan book, built o
 **[financial-text-signal](https://github.com/armotezakker/financial-text-signal)**
 Fine-tuned a transformer on 12,000+ SEC 8-K filings to test whether the language in a corporate filing predicts a stock's next move, benchmarked against a simple word-count baseline. The wording does not predict direction (the fine-tuned model ties a naive guess), but it does predict volatility, beating the baseline substantially and concentrated exactly where word-counting has no signal to find. A follow-up check found the apparent trading edge was mostly an earnings-day artifact; a smaller but real edge survived after controlling for it.
 
+**[verified-anomaly-reports](https://github.com/armotezakker/verified-anomaly-reports)**
+An anomaly detector flags unusual readings in real USGS river sensor data (including the real Hurricane Helene and Guadalupe River floods), an LLM writes an incident report from those readings, and a faithfulness checker verifies the report against the data. The checker catches nearly every fabricated claim except one: swapping the correct river for a different real one, numbers untouched. A five-line deterministic check closes that gap completely, and stress-testing the fix honestly surfaced its own limits rather than claiming it flawless.
+
 **[systematic-strategy-research](https://github.com/armotezakker/systematic-strategy-research)**
 Momentum and short-term reversal signals, backtested with proven look-ahead controls and realistic transaction costs, then tested for statistical significance with a block bootstrap after finding and fixing a real confound in an earlier version of the test. Honest result: neither signal shows a significant edge net of costs in this universe, which is itself the correct, credible finding.
 
