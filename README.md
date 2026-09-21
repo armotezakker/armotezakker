@@ -47,3 +47,6 @@ Route-level price elasticity of demand on 30 years of real US airline fare data.
 
 **[bigquery-loan-analytics](https://github.com/armotezakker/bigquery-loan-analytics)**
 Real BigQuery data warehouse analysis on 1.35 million loan records, cutting query cost by 83 percent through column selection, with a discovery about the query optimizer's behavior along the way and an honest, correctly interpreted comparison against DuckDB.
+
+**[anomalous-diffusion-detection](https://github.com/armotezakker/anomalous-diffusion-detection)**
+Grounded in my PhD work on nanoparticle diffusion in polymer networks. Builds synthetic particle trajectories under normal, subdiffusive, and superdiffusive motion, then compares three methods for detecting exactly when a particle's motion changes. A classical method's weakness on trapped-particle motion is traced to a named physical effect (weak ergodicity breaking), and two independent machine learning methods, using different information from each other, both correct it, confirmed causally rather than assumed. A raw-sequence model ties the feature-engineered one on outcome but leaves the mechanism honestly unresolved.
