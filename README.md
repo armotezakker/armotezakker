@@ -2,6 +2,8 @@
 
 Computational physicist (PhD in Engineering Mechanics, KTH), based in Stockholm, working on molecular simulation and machine learning for biomolecular condensates. I also build applied data science and quantitative finance models on real data, validated before they are trusted.
 
+[Google Scholar](https://scholar.google.com/citations?user=_4nQ2p8AAAAJ) · [armotezakker.github.io](https://armotezakker.github.io) · [LinkedIn](https://www.linkedin.com/in/ahmadrezamotezakker)
+
 ## Scientific Machine Learning and Simulation
 
 - **[nanoparticle-diffusion](https://github.com/armotezakker/nanoparticle-diffusion)**: Langevin dynamics of nanoparticles in polymer networks. MSD and Van Hove analysis separate free, subdiffusive and hopping regimes, and classifiers identify them with over 90% accuracy.
