@@ -8,7 +8,7 @@ Computational physicist (PhD in Engineering Mechanics, KTH), based in Stockholm,
 
 - **[nanoparticle-diffusion](https://github.com/armotezakker/nanoparticle-diffusion)**: Langevin dynamics of nanoparticles in polymer networks. MSD and Van Hove analysis separate free, subdiffusive and hopping regimes, and classifiers identify them with over 90% accuracy.
 - **[anomalous-diffusion-detection](https://github.com/armotezakker/anomalous-diffusion-detection)**: Changepoint detection on simulated fBm and CTRW trajectories. A classical estimator's bias is traced to weak ergodicity breaking, and XGBoost and a CNN each correct it independently.
-- condensate-graph (coming soon)
+- **[condensate-graph](https://github.com/armotezakker/condensate-graph)**: Network analysis of protein-RNA condensates from any coarse-grained trajectory: RNA bridging, periodic percolation, hubs and small-world metrics, validated against published data.
 
 ## Applied Data Science and Quantitative Finance
 
