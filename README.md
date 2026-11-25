@@ -1,58 +1,24 @@
 # Ahmad Reza Motezakker, PhD
 
-Data scientist and quantitative researcher based in Stockholm. PhD in Engineering Mechanics from KTH Royal Institute of Technology. I build models on real data and validate them properly before trusting them, across quantitative finance, credit risk, and applied machine learning.
+Computational physicist (PhD in Engineering Mechanics, KTH), based in Stockholm, working on molecular simulation and machine learning for biomolecular condensates. I also build applied data science and quantitative finance models on real data, validated before they are trusted.
 
-[LinkedIn](https://www.linkedin.com/in/ahmadrezamotezakker) · [Personal site](https://armotezakker.github.io) · [Google Scholar](https://scholar.google.ca/citations?user=_4nQ2p8AAAAJ)
+## Scientific Machine Learning and Simulation
 
-## Projects
+- **[nanoparticle-diffusion](https://github.com/armotezakker/nanoparticle-diffusion)**: Langevin dynamics of nanoparticles in polymer networks. MSD and Van Hove analysis separate free, subdiffusive and hopping regimes, and classifiers identify them with over 90% accuracy.
+- **[anomalous-diffusion-detection](https://github.com/armotezakker/anomalous-diffusion-detection)**: Changepoint detection on simulated fBm and CTRW trajectories. A classical estimator's bias is traced to weak ergodicity breaking, and XGBoost and a CNN each correct it independently.
+- condensate-graph (coming soon)
 
-**[lending-strategy-business-case](https://github.com/armotezakker/lending-strategy-business-case)**
-A strategy consulting-style business case on a $9.7B consumer loan book, built on a calibrated ML risk model. It finds the counterintuitive result that a single well-placed risk cutoff captures most of the available value (the risk score already prices in most of the segment story), and that the recommendation flips only if realized losses run 15 percent below the book's own average. Delivered as a 12-slide executive deck with a conditional recommendation, not just a model.
+## Applied Data Science and Quantitative Finance
 
-**[financial-text-signal](https://github.com/armotezakker/financial-text-signal)**
-Fine-tuned a transformer on 12,000+ SEC 8-K filings to test whether the language in a corporate filing predicts a stock's next move, benchmarked against a simple word-count baseline. The wording does not predict direction (the fine-tuned model ties a naive guess), but it does predict volatility, beating the baseline substantially and concentrated exactly where word-counting has no signal to find. A follow-up check found the apparent trading edge was mostly an earnings-day artifact; a smaller but real edge survived after controlling for it.
+- **[lending-strategy-business-case](https://github.com/armotezakker/lending-strategy-business-case)**: Business case on a $9.7B loan book from a calibrated risk model. One well-placed cutoff captures most of the value, delivered as a 12-slide deck.
+- **[financial-text-signal](https://github.com/armotezakker/financial-text-signal)**: Transformer fine-tuned on 12,000+ SEC 8-K filings. No signal on price direction, but it beats a finance lexicon on volatility after an earnings-day confound check.
+- **[verified-anomaly-reports](https://github.com/armotezakker/verified-anomaly-reports)**: LLM-written incident reports from real USGS river data, checked for faithfulness. The semantic checker misses one swapped-river fabrication, which a five-line deterministic check closes.
+- **[credit-risk-serving-api](https://github.com/armotezakker/credit-risk-serving-api)**: FastAPI credit risk service with MLflow tracking, SHAP explanations and drift monitoring. A reliability flaw in the explanation layer was found and designed out.
+- **[credit-scoring-ifrs9](https://github.com/armotezakker/credit-scoring-ifrs9)**: PD model on 1.35M real loan outcomes with out-of-time validation, a calibration bug fixed by Platt scaling, and IFRS9 staging and expected credit loss.
+- **[anomaly-detector-aws-api](https://github.com/armotezakker/anomaly-detector-aws-api)**: Seasonal anomaly detector deployed as a live API (Lambda container, API Gateway, S3), with measured latency and a cost of about 3 cents a month.
 
-**[verified-anomaly-reports](https://github.com/armotezakker/verified-anomaly-reports)**
-An anomaly detector flags unusual readings in real USGS river sensor data (including the real Hurricane Helene and Guadalupe River floods), an LLM writes an incident report from those readings, and a faithfulness checker verifies the report against the data. The checker catches nearly every fabricated claim except one: swapping the correct river for a different real one, numbers untouched. A five-line deterministic check closes that gap completely, and stress-testing the fix honestly surfaced its own limits rather than claiming it flawless.
+More projects: [quant-risk-models](https://github.com/armotezakker/quant-risk-models) · [consumer-lending-underwriting-policy](https://github.com/armotezakker/consumer-lending-underwriting-policy) · [esg-credit-risk-model](https://github.com/armotezakker/esg-credit-risk-model) · [seasonal-anomaly-detection](https://github.com/armotezakker/seasonal-anomaly-detection) · [systematic-strategy-research](https://github.com/armotezakker/systematic-strategy-research) · [equity-factor-model](https://github.com/armotezakker/equity-factor-model) · [sentiment-alpha-signal](https://github.com/armotezakker/sentiment-alpha-signal) · [ai-power-event-study](https://github.com/armotezakker/ai-power-event-study) · [airline-price-elasticity](https://github.com/armotezakker/airline-price-elasticity) · [mobile-game-analytics](https://github.com/armotezakker/mobile-game-analytics) · [bigquery-loan-analytics](https://github.com/armotezakker/bigquery-loan-analytics) · [customer-churn-analytics](https://github.com/armotezakker/customer-churn-analytics) · [scientific-rag-evaluation](https://github.com/armotezakker/scientific-rag-evaluation)
 
-**[systematic-strategy-research](https://github.com/armotezakker/systematic-strategy-research)**
-Momentum and short-term reversal signals, backtested with proven look-ahead controls and realistic transaction costs, then tested for statistical significance with a block bootstrap after finding and fixing a real confound in an earlier version of the test. Honest result: neither signal shows a significant edge net of costs in this universe, which is itself the correct, credible finding.
+---
 
-**[credit-risk-serving-api](https://github.com/armotezakker/credit-risk-serving-api)**
-A live FastAPI service for a credit risk model, with MLflow experiment tracking, SHAP-based explainability narrated by a local language model, and population-stability drift monitoring. Found and fixed a real reliability issue in the explanation layer, then rebuilt the architecture so the failure mode could not recur.
-
-**[credit-scoring-ifrs9](https://github.com/armotezakker/credit-scoring-ifrs9)**
-A probability-of-default model built on 1.35 million real loan outcomes, with time-based out-of-time validation, a calibration bug found and fixed with Platt scaling, and IFRS9 staging and expected credit loss with a threshold chosen through sensitivity analysis rather than picked arbitrarily.
-
-**[quant-risk-models](https://github.com/armotezakker/quant-risk-models)**
-Markowitz portfolio optimization, Black-Scholes option pricing, Value at Risk, and Merton-Vasicek structural credit risk, built on real market data and backtested against real outcomes.
-
-**[esg-credit-risk-model](https://github.com/armotezakker/esg-credit-risk-model)**
-Merton structural credit model on 352 S&P 500 firms testing whether ESG risk predicts default risk after controlling for leverage, size, and sector, finding a clean null validated through influence diagnostics and sub-score decomposition. A climate transition stress overlay showed the shock amplifies risk only in firms that were already highly leveraged, leaving strong balance sheets unaffected even under a severe shock.
-
-**[consumer-lending-underwriting-policy](https://github.com/armotezakker/consumer-lending-underwriting-policy)**
-An independent credit risk model on ~30 million LendingClub applications, turned into a threshold-based approval policy and tested on later loan vintages. Without seeing LendingClub's own grade, it recovers their exact risk ordering (Spearman 1.0). The final phase confronts the reject-inference limitation head-on: with no outcomes for declined applicants, this is a re-ordering-within-an-accepted-book result, not a lending-expansion claim, and I deliberately did not force a reject-inference technique the data could not support.
-
-**[seasonal-anomaly-detection](https://github.com/armotezakker/seasonal-anomaly-detection)**
-Seasonal and trend-aware anomaly detection tested on six real series from the Numenta Anomaly Benchmark, with two candidate fixes tested as separate ablations rather than bundled. One fix took a broken detector from catching 1 of 5 real anomalies to 5 of 5. The other backfired for a measured reason. On 4 of 6 series, the original naive detector was still the best result, reported honestly rather than hidden.
-
-**[mobile-game-analytics](https://github.com/armotezakker/mobile-game-analytics)**
-A SQL and statistics case study on mobile game session data: revenue and engagement analysis, a feature-launch investigation, and an A/B test evaluation. In the feature-launch piece I caught that the assumed before-and-after framing did not match the data before drawing a conclusion from it, and the A/B test evaluation uses proper confidence intervals and significance testing rather than point estimates.
-
-**[ai-power-event-study](https://github.com/armotezakker/ai-power-event-study)**
-A market model event study testing whether real, dated news about AI data center power demand caused significant stock reactions, with a safeguard that caught a real data contamination case on the first live run. Two individually significant results did not survive a Bonferroni correction for multiple testing, the honest, complete answer once accounted for.
-
-**[airline-price-elasticity](https://github.com/armotezakker/airline-price-elasticity)**
-Route-level price elasticity of demand on 30 years of real US airline fare data. Found and fixed a 30-year trend confound, then a new overfitting problem introduced by that fix, both proven with tests that fail on the old code and pass on the new. Final elasticities land in a literature-consistent range, concentrated in leisure travel markets as economic theory predicts.
-
-**[bigquery-loan-analytics](https://github.com/armotezakker/bigquery-loan-analytics)**
-Real BigQuery data warehouse analysis on 1.35 million loan records, cutting query cost by 83 percent through column selection, with a discovery about the query optimizer's behavior along the way and an honest, correctly interpreted comparison against DuckDB.
-
-**[anomalous-diffusion-detection](https://github.com/armotezakker/anomalous-diffusion-detection)**
-Grounded in my PhD work on nanoparticle diffusion in polymer networks. Builds synthetic particle trajectories under normal, subdiffusive, and superdiffusive motion, then compares three methods for detecting exactly when a particle's motion changes. A classical method's weakness on trapped-particle motion is traced to a named physical effect (weak ergodicity breaking), and two independent machine learning methods, using different information from each other, both correct it, confirmed causally rather than assumed. A raw-sequence model ties the feature-engineered one on outcome but leaves the mechanism honestly unresolved.
-
-**[scientific-rag-evaluation](https://github.com/armotezakker/scientific-rag-evaluation)**
-A retrieval-augmented question-answering system built over five real ML papers (Attention, BERT, GPT-3, RAG, InstructGPT), evaluated against a hand-verified 34-question gold set and a hand-verified 14-question adversarial set, both checked against the source chunks rather than generated and trusted. Retrieval, not the language model, turns out to be the real bottleneck: answer accuracy is 84 percent when the correct passage is retrieved versus 27 percent when it isn't. On the adversarial set the system correctly refuses 92.9 percent of unanswerable and false-premise questions, and the one failure is traced precisely: it answers a question about one paper using content retrieved entirely from a different paper, without checking that the source actually matched what was asked.
-
-**[anomaly-detector-aws-api](https://github.com/armotezakker/anomaly-detector-aws-api)**
-Deployed the final detector from seasonal-anomaly-detection as a live, callable AWS API. The dependency stack exceeded Lambda's zip-deployment limit, measured directly before assuming, solved with a container image via ECR. Tested against the real live endpoint: correctly flags an injected anomaly, routes between decomposition methods based on data sufficiency, and handles malformed requests cleanly, with throttling and a budget alert as cost safety nets. Free for 12 months at portfolio traffic, about 3 cents a month after.
+[Google Scholar](https://scholar.google.com/citations?user=_4nQ2p8AAAAJ) · [armotezakker.github.io](https://armotezakker.github.io) · [LinkedIn](https://www.linkedin.com/in/ahmadrezamotezakker)
